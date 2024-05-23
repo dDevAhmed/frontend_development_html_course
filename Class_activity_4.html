@@ -1,0 +1,82 @@
+<!-- 
+    Create a feedback form with the following requirements: 
+    1- Username
+    2- Password
+    3- Email
+    4- Month
+    5- Time
+    6- Drop down
+    7- Text area
+    8- File
+    9- Radio button (male female)
+    10-Submit
+    Note: Give a heading to your form 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+</head>
+
+<body>
+    <h3>Class Activities</h3>
+    <a href="index.html">Home page</a> |
+    <a href="class_activity_1.html">Class Activity 1</a> |
+    <a href="class_activity_2.html">Class Activity 2</a>
+    <a href="class_activity_3.html">Class Activity 3</a>
+    <a href="class_activity_4.html">Class Activity 4</a>
+
+    <br><br>
+
+    <!-- I am here to collect feedback  -->
+    <form action="">
+        <fieldset>
+            <h3>Feedback Form</h3>
+            <input type="text" placeholder="username">
+            <br><br>
+            <input type="password" placeholder="password">
+            <br><br>
+            <input type="email" placeholder="email">
+            <br><br>
+            <select name="month" id="">
+                <option value="1">January</option>
+                <option value="2">February</option>
+                <option value="3">March</option>
+                <option value="4">April</option>
+                <option value="5">May</option>
+                <option value="6">June</option>
+                <option value="7">July</option>
+                <option value="8">August</option>
+                <option value="9">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+            </select>
+            <input type="time">
+            <br><br>
+            <select name="" id="">
+                <option value="">Tea</option>
+                <option value="">Fruit Juice</option>
+                <option value="">Yoghurt</option>
+            </select>
+            <br><br>
+            <textarea name="Description" id="" rows="5" cols="50"
+                placeholder="Enter your description here..."></textarea>
+            <br><br>
+            <input type="file" name="gender" id="">
+            <br><br>
+            <label> Male
+                <input type="radio" name="gender" id="" value="male">
+            </label>
+            <label> Female<input type="radio" name="gender" id="" value="female"></label>
+            <br><br>
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>
