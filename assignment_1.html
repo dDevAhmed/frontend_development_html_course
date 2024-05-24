@@ -12,6 +12,9 @@
 
 </head>
 <body>
+    <h1>Assignment 1: Google Form</h1>
+    <p>Big assignment alert! I'm tasked with designing a Google Form for our graduation T-Shirt signup. It's going to be stylish, functional, and absolutely sign-up-worthy! 🎓👕</p>
+
     <h3>Class Activities</h3>
     <a href="index.html">Home page</a> |
     <a href="class_activity_1.html">Class Activity 1</a> |
@@ -22,6 +25,63 @@
     <h3>Assignment Links</h3>
     <a href="assignment_1.html">Assignment 1</a> |
 
-    
+    <main>
+        <header>
+            <h1>T-Shirt Sign Up</h1>
+            <p>Enter your name and size to sign up for a T-shirt</p>
+            <hr>
+            <p><a href="#">Sign in to Google</a> to save your progress. <a href="#">Learn more</a></p>
+            <hr>
+            <p id="instructions">*Indicates required question</p>
+        </header>
+
+        <div>
+            <h5>Name <span>*</span></h5>
+            <input type="text" placeholder="Your answer">
+        </div>
+
+        <div>
+            <h5>Shirt size</h5>
+            <label for="XS">
+                <input type="radio" name="XS" id="XS"> XS
+            </label>
+            <label for="S">
+                <input type="radio" name="S" id="S"> S
+            </label>
+            <label for="M">
+                <input type="radio" name="M" id="M"> M
+            </label>
+            <label for="L">
+                <input type="radio" name="L" id="L"> L
+            </label>
+            <label for="XL">
+                <input type="radio" name="XL" id="XL"> XL
+            </label>
+        </div>
+
+        <div>
+            <h5>T-Shirt Preview</h5>
+            <img src="image/thebodytshirt.png" alt="Body Shirt Image">
+        </div>
+
+        <div>
+            <h5>Other thoughts or comments</h5>
+            <input type="text" placeholder="Your answer">
+        </div>
+
+        <div>
+            <div>
+                <button>Submit</button>
+                <a href="#">Clear form</a>
+            </div>
+            <p>Never submit passwords through Google Forms</p>
+        </div>
+
+        <footer>
+            <p>This content is neither created nor endorsed by Google <a href="#">Report Abuse</a> - <a href="#">Terms of Service</a> - <a href="#">Privacy Policy</a></p>
+            <h3>Google Forms</h3>
+            <a href="#"><img src="image/icons8-info-100.png" alt="Info Message"></a>
+        </footer>
+    </main>
 </body>
 </html>
