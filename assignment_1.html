@@ -10,7 +10,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google Form T-shirt Signup</title>
     <link rel="shortcut icon" href="image/html_favicon/icons8-html-color-32.png" type="image/x-icon">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
+        body {
+            background: whitesmoke;
+            font-family: sans-serif;
+        }
+
+        main {
+            width: 550px;
+            margin: 20px auto;
+        }
+        
+        form{
+            /* font-size: 14px; */
+        }
+        
+        header,
+        form div {
+            background: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        
+        header {
+            border-top: 10px solid #673AB7;
+            padding: 0 0 5px 0;
+            font-size: 14px;
+        }
+        
+        header h1 {
+            font-weight: 500;
+            padding: 0 20px;
+        }
+
+        header p a{
+            text-decoration: none;
+        }
+
+        header p:not(:last-child) {
+            border-bottom: 1px solid rgba(220, 220, 220, 1.0);
+            padding: 5px 20px;
+        }
+
+        header p:last-child {
+            padding: 0 20px;
+            color: #DD6F41;
+        }
+
+        form div.tshirt-size{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        form div.tshirt-preview img {
+            width: 50%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        form div.submit-clear{
+            display: flex;
+            justify-content: space-between;
+            background: none;
+            padding: unset;
+        }
+
+        form div.submit-clear button{
+            background: #673AB7;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 5px;
+            border: none;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        form div.submit-clear a{
+            text-decoration: none;
+            color: #673AB7;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        footer{
+            color: grey;
+            font-size: 11px;
+        }
+
+        footer a{
+            color: grey;
+        }
+
+        footer p:nth-child(2){
+            text-align: center;
+            margin-top: 15px;
+        }
+        
+        footer h3{
+            text-align: center;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 500;
+            margin-top: 15px;
+        }
+
+        footer a.info img{
+            height: 25px;
+            width: auto;
+            margin-top: -20px;
+        }
+
+        footer h3 span{
+            font-weight: 700;
+        }
+
+        form div h5 {
+            font-weight: 500;
+        }
+
+        input[type=text] {
+            border: none;
+            border-bottom: 1px solid whitesmoke;
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+            outline: none;
+            padding: 5px;
+            font-size: 14px;
+        }
+
+        input[type=radio] {
+            margin: 10px 0;
+        }
+    </style>
 </head>
 
 <body>
@@ -27,28 +166,24 @@
     <a href="class_activity_5.html">Calculator</a> |
 
     <h3>Assignment Links</h3>
-    <a href="assignment_1.html">Google Form</a> |
+    <a href="assignment_1.html">T-Shirt Signup Form</a> |
     <a href="assignment_2.html">Kaduna Electric Form</a> |
-
-    
 
     <main>
         <header>
             <h1>T-Shirt Sign Up</h1>
             <p>Enter your name and size to sign up for a T-shirt</p>
-            <hr>
             <p><a href="#">Sign in to Google</a> to save your progress. <a href="#">Learn more</a></p>
-            <hr>
-            <p id="instructions">*Indicates required question</p>
+            <p id="instructions">* Indicates required question</p>
         </header>
 
         <form action="">
-            <section>
+            <div>
                 <h5>Name <span>*</span></h5>
-                <input type="text" placeholder="Your answer">
-            </section>
+                <input type="text" placeholder="Your answer" autofocus>
+            </div>
 
-            <section>
+            <div class="tshirt-size">
                 <h5>Shirt size</h5>
                 <label for="XS">
                     <input type="radio" name="size" id="XS"> XS
@@ -65,19 +200,19 @@
                 <label for="XL">
                     <input type="radio" name="size" id="XL"> XL
                 </label>
-            </section>
+            </div>
 
-            <section>
+            <div class="tshirt-preview">
                 <h5>T-Shirt Preview</h5>
                 <img src="image/thebodytshirt.png" alt="Body Shirt Image">
-            </section>
-
-            <section>
-                <h5>Other thoughts or comments</h5>
-                <input type="text" placeholder="Your answer">
-            </section>
+            </div>
 
             <div>
+                <h5>Other thoughts or comments</h5>
+                <input type="text" placeholder="Your answer">
+            </div>
+
+            <div class="submit-clear">
                 <button>Submit</button>
                 <a href="#">Clear form</a>
             </div>
@@ -87,8 +222,8 @@
             <p>Never submit passwords through Google Forms</p>
             <p>This content is neither created nor endorsed by Google <a href="#">Report Abuse</a> - <a href="#">Terms
                     of Service</a> - <a href="#">Privacy Policy</a></p>
-            <h3>Google Forms</h3>
-            <a href="#"><img src="image/icons8-info-100.png" alt="Info Message"></a>
+            <h3><span>Google</span> Forms</h3>
+            <a href="#" class="info"><img src="image/icons8-info-100.png" alt="Info Message"></a>
         </footer>
     </main>
 </body>
