@@ -1,0 +1,155 @@
+<!-- 
+    1. replicate the google form - google_form_tshirt_signup.png
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricity Purchase Form</title>
+    <link rel="shortcut icon" href="image/html_favicon/icons8-html-color-32.png" type="image/x-icon">
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body {
+            background: whitesmoke;
+            font-family: sans-serif;
+        }
+
+        main {
+            background: white;
+            width: 450px;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header img {
+            width: 50%;
+            height: auto;
+            border: 2px solid purple;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        header p,
+        form h5 {
+            font-weight: 700;
+            font-size: 16px;
+        }
+
+        form div:not(:first-child) {
+            margin-top: 30px;
+        }
+
+        label {
+            color: grey;
+        }
+
+        /* fixme - color not working */
+        input[type=radio] {
+            background-color: purple;
+        }
+
+        input[type=radio]:checked {
+            background-color: purple;
+            color: purple;
+            border: 1px solid purple;
+        }
+
+        input[type=text] {
+            border: none;
+            border-bottom: 2px solid whitesmoke;
+            display:block;
+            width: 95%;
+            margin: 0 auto;
+            outline: none;
+            padding: 3px;
+            font-size: 14px;
+        }
+
+        #note{
+            font-size: 11px;
+            color: grey;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #note strong{
+            color: black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Assignment 2: Kaduna Electric Form</h1>
+    <p>This one's for 'Kaduna Electric'! Get ready to purchase power with a form that's stylish, functional, and guaranteed to light up your day! 💡⚡ It's electrifying and efficient, perfect for powering up in style! 🔋✨</p>
+
+    <h3>Class Activities</h3>
+    <a href="index.html">Home page</a> |
+    <a href="class_activity_1.html">Favorite Food</a> |
+    <a href="class_activity_2.html">Login Form</a> |
+    <a href="class_activity_3.html">Favorite Book</a> |
+    <a href="class_activity_4.html">Feedback Form</a> |
+    <a href="class_activity_5.html">Calculator</a> |
+
+    <h3>Assignment Links</h3>
+    <a href="assignment_1.html">Google Form</a> |
+    <a href="assignment_2.html">Kaduna Electric Form</a> |
+
+    <main>
+        <header>
+            <img src="image/kaduna-electric-logo.png" alt="Kaduna Electric Logo">
+            <p>Kaduna Electric</p>
+        </header>
+
+        <form action="">
+            <div>
+                <h5>Meter Type</h5>
+                <label for="prepaid">
+                    <input type="radio" name="meter-type" id="prepaid" checked> Prepaid
+                </label>
+                <label for="postpaid">
+                    <input type="radio" name="meter-type" id="postpaid"> Postpaid
+                </label>
+            </div>
+
+            <div>
+                <h5>Meter Number</h5>
+                <input type="text" autofocus>
+            </div>
+
+            <div>
+                <h5>Amount</h5>
+                <input type="text">
+            </div>
+
+            <div>
+                <h5>Mobile Number</h5>
+                <input type="text">
+            </div>
+
+            <div>
+                <h5>Email</h5>
+                <input type="text">
+            </div>
+        </form>
+
+        <p id="note"><strong>Note:</strong> This form is just a sneak peek into the electrifying experience of buying power! The full form will be available in the final version. Stay tuned and keep those circuits ready! ⚡😁</p>
+    </main>
+
+</body>
+
+</html>
