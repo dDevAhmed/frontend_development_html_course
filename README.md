@@ -33,14 +33,18 @@ The course is divided into several modules, each focusing on different aspects o
 
 To get started with the content of this repository, follow these steps:
 
-1. **Clone the repository**: 
+1. **Clone the repository**:
+
     ```bash
     git clone https://github.com/dDevAhmed/frontend_development_html_course.git
     ```
-2. **Navigate to the course directory**: 
+
+2. **Navigate to the course directory**:
+
     ```bash
-    cd frontend-html-course
+    cd frontend_development_html_course
     ```
+
 3. **Open the index.html file in your browser** to view my work and progress.
 
 ## Course Content
@@ -66,17 +70,23 @@ I welcome feedback and contributions from the community! If you'd like to contri
 
 1. **Fork the repository**.
 2. **Create a new branch**:
+
     ```bash
     git checkout -b feature-branch
     ```
+
 3. **Make your changes** and commit them:
+
     ```bash
     git commit -m "Add feature"
     ```
+
 4. **Push to the branch**:
+
     ```bash
     git push origin feature-branch
     ```
+
 5. **Open a pull request** and describe your changes.
 
 <!-- ## License
