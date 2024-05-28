@@ -1,0 +1,261 @@
+<!-- 
+    Using multimedia element, add 2 videos, 1 image, 1 audio in your html document
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage Replication</title>
+    <link rel="shortcut icon" href="image/html_favicon/icons8-html-color-32.png" type="image/x-icon">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: monospace;
+        }
+
+        :root {
+            --primary-color: #FD7100;
+            --secondary-color: #FEFEFC;
+            --defined-border-radius: 5px;
+        }
+
+        .replica-container {
+            width: 70%;
+            margin: 30px auto;
+        }
+
+        .replica-container section {
+            background-image: linear-gradient(360deg, rgba(0, 0, 0, 0), rgba(10, 10, 10, 1.0)), url('image/desert-tree.jpg');
+            background-size: cover;
+            background-position: center;
+            /* background-attachment: fixed; */
+            padding: 10px 60px;
+        }
+
+        .replica-container nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+        }
+
+        nav h3.nav-logo {
+            color: var(--primary-color);
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        nav ul.nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul.nav-links li {
+            list-style-type: none;
+        }
+
+        nav ul.nav-links li a {
+            color: white;
+            text-decoration: none;
+            font-size: large;
+            font-weight: 900;
+        }
+
+        nav ul.nav-links li a:hover {
+            color: var(--primary-color)
+        }
+
+        nav .nav-search-box {
+            display: flex;
+            border-radius: var(--defined-border-radius);
+            border: 1px solid var(--primary-color);
+        }
+
+        nav .nav-search-box input {
+            background: transparent;
+            outline: none;
+            padding: 8px;
+            font-size: 16px;
+            color: white;
+            border: none;
+            border-radius: var(--defined-border-radius);
+        }
+
+        nav .nav-search-box input::placeholder {
+            color: whitesmoke;
+        }
+
+        nav .nav-search-box button {
+            border: none;
+            background: var(--primary-color);
+            color: white;
+            padding: 5px 10px;
+        }
+
+        .replica-container .hero {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+        }
+
+        .hero .left-container h1 {
+            color: white;
+            font-size: 36px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .hero .left-container h1 span {
+            color: var(--primary-color);
+        }
+
+        .hero .left-container p {
+            color: white;
+            margin-top: -30px;
+            line-height: 25px;
+        }
+
+        .hero .left-container button {
+            border: none;
+            background: var(--primary-color);
+            color: black;
+            padding: 8px 25px;
+            border-radius: var(--defined-border-radius);
+            font-weight: 700;
+            margin-top: 20px;
+        }
+
+        .hero .right-container form {
+            background-color: rgba(10, 10, 10, 0.8);
+            border-radius: var(--defined-border-radius);
+            padding: 30px;
+        }
+
+        .right-container form .form-title {
+            background: white;
+            border-radius: var(--defined-border-radius);
+            color: var(--primary-color);
+            padding: 10px 20px;
+            text-align: center;
+            font-weight: 700;
+            font-size: 18px;
+            margin-top: -10px;
+        }
+
+        .right-container form input {
+            background: transparent;
+            outline: none;
+            padding: 8px 0;
+            /* font-size: 16px; */
+            color: white;
+            border: none;
+            border-bottom: 1px solid var(--primary-color);
+            margin: 10px 0;
+        }
+
+        .right-container form input::placeholder {
+            color: white;
+        }
+
+        .right-container form button {
+            display: block;
+            width: 100%;
+            border: none;
+            background: var(--primary-color);
+            color: black;
+            padding: 8px 25px;
+            border-radius: var(--defined-border-radius);
+            font-weight: 800;
+            margin-top: 20px;
+        }
+
+        .right-container form p {
+            color: white;
+            text-align: center;
+        }
+
+        .right-container form p:nth-of-type(1) {
+            font-size: 14px;
+        }
+
+        .right-container form p:nth-of-type(1)>a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        /* general rules */
+        .background-tint {
+            background-color: rgba(0, 0, 0, 0.5);
+            background-blend-mode: multiply;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Class Activity 7: Webpage Replication</h1>
+    <p>Ready for a challenge? 🌐 This activity involves replicating a webpage from a site that teaches web design and
+        development. Sharpen your skills as you recreate the look and feel of an existing site. It's a perfect exercise
+        to master the art of web development! 💻🎨</p>
+
+    <h3>Class Activity Links</h3>
+    <a href="index.html">Home page</a> |
+    <a href="class_activity_1.html">Favorite Food</a> |
+    <a href="class_activity_2.html">Login Form</a> |
+    <a href="class_activity_3.html">Favorite Book</a> |
+    <a href="class_activity_4.html">Feedback Form</a> |
+    <a href="class_activity_5.html">Basic Calculator</a> |
+    <a href="class_activity_6.html">Html Multimedia</a> |
+    <a href="class_activity_7.html">Page Replicate</a> |
+
+    <h3>Assignment Links</h3>
+    <a href="assignment_1.html">T-Shirt Signup Form</a> |
+    <a href="assignment_2.html">Kaduna Electric Form</a> |
+    <a href="assignment_3.html">Cable TV Packages</a> |
+
+    <div class="replica-container">
+        <section class="background-tint">
+            <header>
+                <nav>
+                    <h3 class="nav-logo">PraRoz</h3>
+                    <ul class="nav-links">
+                        <li><a href="javascript:void(0)">Home</a></li>
+                        <li><a href="javascript:void(0)">About</a></li>
+                        <li><a href="javascript:void(0)">Service</a></li>
+                        <li><a href="javascript:void(0)">Design</a></li>
+                        <li><a href="javascript:void(0)">Contact</a></li>
+                    </ul>
+                    <span class="nav-search-box">
+                        <input type="text" name="search" id="search" placeholder="Type to Search">
+                        <button type="button">Search</button>
+                    </span>
+                </nav>
+            </header>
+            <div class="hero">
+                <div class="left-container">
+                    <h1>Web Design & <br> <span>Development</span> <br> Course</h1>
+                    <p>Web Design is a specialisation of the design stream. They also use HTML, <br> CSS, WYSIWYG
+                        editing
+                        software, mark up validators etc., <br> to create design elements. </p>
+                    <button>JOIN US</button>
+                </div>
+                <div class="right-container">
+                    <form>
+                        <h3 class="form-title">Login Here</h3>
+                        <input type="email" name="" id="" placeholder="Enter Email Here">
+                        <input type="password" name="" id="" placeholder="Enter Password Here">
+                        <button>Login</button>
+                        <p>Don't have an account? <br><a href="#">Sign up</a> here</p>
+                        <p>Log in ith</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
