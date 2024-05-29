@@ -1,0 +1,334 @@
+<!-- 
+    Using multimedia element, add 2 videos, 1 image, 1 audio in your html document
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Webpage Replication</title>
+    <link rel="shortcut icon" href="image/html_favicon/icons8-html-color-32.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #246BE7;
+            --secondary-color: #FEFEFC;
+            --defined-border-radius: 5px;
+
+            --nav-button-background-color: #014CBF;
+            --hero-tint: rgb(67, 120, 212);
+        }
+
+        .replica-container {
+            font-family: sans-serif;
+            width: 70%;
+            margin: 30px auto;
+            border: 1px solid grey;
+        }
+
+        .replica-container section {
+            /* background-image: linear-gradient(360deg, rgba(0, 0, 0, 0), rgba(10, 10, 10, 1.0)), url('image/desert-tree.jpg'); */
+            background-image: url('image/lady-pressing-phone.jpg');
+            background-size: cover;
+            background-position: center;
+            /* background-attachment: fixed; */
+            padding: 10px 60px;
+        }
+
+        .replica-container nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+            padding: 10px 60px;
+        }
+
+        .nav-logo-container {
+            display: flex;
+            align-items: center;
+            gap: 3px;
+        }
+
+        .nav-logo-container img {
+            height: 24px;
+        }
+
+        nav h3.nav-logo {
+            color: var(--primary-color);
+            font-size: 2rem;
+            font-weight: 900;
+        }
+
+        nav ul.nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul.nav-links li {
+            list-style-type: none;
+        }
+
+        nav ul.nav-links li a {
+            color: grey;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        nav ul.nav-links li a:hover {
+            color: var(--primary-color)
+        }
+
+        a.nav-login-button {
+            background-color: var(--nav-button-background-color);
+            color: white !important;
+            border: none;
+            border-radius: 20px;
+            padding: 5px 20px;
+        }
+
+        .replica-container .hero {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+            margin: 60px 0;
+        }
+
+        .left-container {
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .hero .left-container p:nth-child(1) {
+            text-transform: uppercase;
+            margin-bottom: -5px;
+            font-size: 12px;
+        }
+
+        .hero .left-container h1 {
+            text-transform: capitalize;
+            margin-bottom: -5px;
+            font-size: 28px;
+        }
+
+        .hero .left-container p:nth-child(3) {
+            font-size: 12px;
+            /* text-transform: uppercase; */
+        }
+
+        .hero .left-container button {
+            border: 1px solid white;
+            background: transparent;
+            color: white;
+            padding: 10px 30px;
+            border-radius: 20px;
+            font-weight: 700;
+            cursor: pointer;
+            width: fit-content;
+            margin-top: 20px;
+        }
+
+        .hero .right-container form {
+            background-color: white;
+            border-radius: var(--defined-border-radius);
+            padding: 40px 20px;
+        }
+
+        .right-container form .form-title {
+            border-radius: var(--defined-border-radius);
+            color: Black;
+            font-weight: 700;
+            font-size: 18px;
+            margin-top: -10px;
+        }
+
+        .right-container form label {
+            color: grey;
+            font-size: 12px;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .right-container form div.form-input-container {
+            /* display: block; */
+            border: 1px solid grey;
+            border-radius: var(--defined-border-radius);
+            padding: 5px 8px;
+            margin-bottom: 15px;
+            /* display: block; */
+            width: 100%;
+        }
+
+        .right-container form div.form-input-container select {
+            background: transparent;
+            display: block;
+            width: 100%;
+            border: none;
+            color: grey;
+        }
+
+
+        .right-container form input {
+            background: transparent;
+            outline: none;
+            padding: 8px 0;
+            color: white;
+            border: none;
+            margin: 10px 0;
+        }
+
+        .right-container form input::placeholder {
+            color: grey;
+        }
+
+        .right-container form button {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+            border: none;
+            background: var(--primary-color);
+            color: white;
+            padding: 8px 25px;
+            border-radius: var(--defined-border-radius);
+            font-weight: 500;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        .right-container form p.terms {
+            color: grey;
+            text-align: center;
+            font-size: 12px !important;
+            line-height: 20px;
+        }
+
+        .right-container form p.terms a {
+            text-decoration: none;
+        }
+
+        /* general rules */
+        .background-tint {
+            background-color: var(--hero-tint);
+            background-blend-mode: multiply;
+        }
+
+        .right-container form div.form-input-container span.flag-dropdown {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: grey;
+        }
+
+        .right-container form div.form-input-container span.flag-dropdown img {
+            height: 20px;
+        }
+
+        .right-container form div.form-input-container .amount-container {
+            display: flex;
+            margin: -15px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Class Activity 8: Financial Webpage Replication</h1>
+    <p>Level up your skills! 💸 This activity involves replicating a financial webpage for easy, real-time money
+        transfers with no charges. Perfect for mastering web development! 💻💵</p>
+
+    <h3>Class Activity Links</h3>
+    <a href="index.html">Home page</a> |
+    <a href="class_activity_1.html">Favorite Food</a> |
+    <a href="class_activity_2.html">Login Form</a> |
+    <a href="class_activity_3.html">Favorite Book</a> |
+    <a href="class_activity_4.html">Feedback Form</a> |
+    <a href="class_activity_5.html">Basic Calculator</a> |
+    <a href="class_activity_6.html">Html Multimedia</a> |
+    <a href="class_activity_7.html">Page Replicate</a> |
+    <a href="class_activity_8.html">Financial Webpage Replication</a> |
+
+    <h3>Assignment Links</h3>
+    <a href="assignment_1.html">T-Shirt Signup Form</a> |
+    <a href="assignment_2.html">Kaduna Electric Form</a> |
+    <a href="assignment_3.html">Cable TV Packages</a> |
+
+    <div class="replica-container">
+        <header>
+            <nav>
+                <span class="nav-logo-container">
+                    <img src="image/icons8-signal-100.png" alt="Roysha Logo">
+                    <h3 class="nav-logo-text">Roysha</h3>
+                </span>
+
+                <ul class="nav-links">
+                    <li><a href="javascript:void(0)">Home</a></li>
+                    <li><a href="javascript:void(0)">Send Money</a></li>
+                    <li><a href="javascript:void(0)">Receive Money</a></li>
+                    <li><a href="javascript:void(0)">Pages</a></li>
+                    <li><a href="javascript:void(0)">About</a></li>
+                    <li><a href="javascript:void(0)">Blog</a></li>
+                    <li><a href="javascript:void(0)">Contact</a></li>
+                    <li><a href="javascript:void(0)" class="nav-login-button">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="background-tint">
+            <div class="hero">
+                <div class="left-container">
+                    <p>simple and easy way to </p>
+                    <h1>transfer money across <br> world in real time <br> with no charge</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia odit qui libero, alias nisi
+                        veniam unde, eius doloribus distinctio laborum velit eum numquam minus? Recusandae praesentium
+                        ratione corrupti quis nam!</p>
+                    <button>Watch Video</button>
+                </div>
+                <div class="right-container">
+                    <form>
+                        <h3 class="form-title">Send Money</h3>
+                        <label for="amount">Send Amount</label>
+                        <div class="form-input-container">
+                            <span class="amount-container">
+                                <input type="text" name="amount" id="" placeholder="$1000.00">
+                                <span class="flag-dropdown">
+                                    |
+                                    <img src="image/icons8-american-flag-100.png" alt="American Flag">
+                                    <p>USD</p>
+                                    <i class="fa fa-caret-down"></i>
+                                </span>
+                            </span>
+                        </div>
+                        <label for="country">Receiver Country</label>
+                        <div class="form-input-container">
+                            <select name="country" id="">
+                                <option value="">Select Country</option>
+                                <option value="">Nigeria</option>
+                                <option value="">Any Country Not Nigeria</option>
+                            </select>
+                        </div>
+                        <label for="delivery-type">Delivery Type</label>
+                        <div class="form-input-container">
+                            <select name="delivery-type" id="">
+                                <option value="">Choose Delivery Type</option>
+                                <option value="">Freight</option>
+                                <option value="">Parcel</option>
+                            </select>
+                        </div>
+                        <button>Continue Transition <i class="fa fa-arrow-right"></i></button>
+                        <p class="terms">By clicking continue, I am agree with <a href="#">Terms & Policy</a></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
