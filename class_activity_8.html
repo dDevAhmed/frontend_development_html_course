@@ -176,7 +176,7 @@
             background: transparent;
             outline: none;
             padding: 8px 0;
-            color: white;
+            color: grey;
             border: none;
             margin: 10px 0;
         }
@@ -211,20 +211,18 @@
             text-decoration: none;
         }
 
-        .right-container form div.form-input-container span.flag-dropdown {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            color: grey;
-        }
-
-        .right-container form div.form-input-container span.flag-dropdown img {
-            height: 20px;
-        }
-
         .right-container form div.form-input-container .amount-container {
             display: flex;
             margin: -15px 0;
+            /* justify-content: space-around; */
+        }
+
+        .currency-dropdown {
+            width: fit-content !important;
+        }
+
+        .currency-dropdown-select {
+            display: flex;
         }
 
         /* general rules */
@@ -284,6 +282,7 @@
     <a href="class_activity_8.html">Financial Webpage Replication</a> |
     <a href="class_activity_9.html">Weekly Planner</a> |
     <a href="class_activity_10.html">Weekly Classroom Schedule</a> |
+    <a href="class_activity_11.html">Revision 1</a> |
 
     <h3>Assignment Links</h3>
     <a href="assignment_1.html">T-Shirt Signup Form</a> |
@@ -329,14 +328,22 @@
                         <label for="amount">Send Amount</label>
                         <div class="form-input-container">
                             <span class="amount-container">
-                                <input type="text" name="amount" id="" placeholder="$1000.00">
-                                <!-- fixme - change to dropdown -->
-                                <span class="flag-dropdown">
-                                    |
-                                    <img src="image/icons8-american-flag-100.png" alt="American Flag">
-                                    <p>USD</p>
-                                    <i class="fa fa-caret-down"></i>
-                                </span>
+                                <input type="text" name="amount" id="" placeholder="$1000.00" class="amount-input">
+                                <select name="country" id="" name="currency" class="currency-dropdown">
+                                    <option value="ng" class="currency-dropdown-select">
+                                        <i class="fa fa-user"></i>
+                                        <img src="image/icons8-american-flag-100.png" alt="American Flag">
+                                        <p>NGN</p>
+                                    </option>
+                                    <option value="ng" class="currency-dropdown-select">
+                                        <img src="image/icons8-american-flag-100.png" alt="American Flag">
+                                        <p>BPD</p>
+                                    </option>
+                                    <option value="ng" class="currency-dropdown-select">
+                                        <img src="image/icons8-american-flag-100.png" alt="American Flag">
+                                        <p>USD</p>
+                                    </option>
+                                </select>
                             </span>
                         </div>
                         <label for="country">Receiver Country</label>
