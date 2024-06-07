@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revision 3</title>
+    <link rel="shortcut icon" href="image/html_favicon/icons8-html-color-32.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        :root {
+            --container-color: #567CC7;
+            --header-color: #B6BFD0;
+        }
+
+        body {
+            background-color: whitesmoke;
+        }
+
+        .page-container {
+            width: 70%;
+            margin: 20px auto;
+            background: white;
+            padding: 5px 50px;
+            font-family: 'Times New Roman', Times, serif;
+            padding-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        .page-container form{
+            display: flex;
+            align-items: center;
+            gap: 30px;   
+            justify-content: center;
+            /* fixme - center the form horizontally */
+            /* margin: auto; */
+        }
+
+        form .right-column{
+            text-align: left;
+        }
+
+        form p{
+            text-align: right;
+        }
+
+        form input, form label{
+            display: block;
+        }
+
+        /* .row p {
+            text-align: right !important;
+        }
+
+        .row input[type="radio"],
+        .row input[type="checkbox"] {
+            display: block;
+        } */
+    </style>
+</head>
+
+<body>
+    <h1>Revision 3: Page Replicate</h1>
+    <!-- fixme - refine -->
+    <p>It's revision time! 📝 In this activity, I'll be replicating a straightforward yet essential web page to hone my
+        skills. The goal is to perfectly match the content and structure provided. Here's what the replicated page
+        includes:</p>
+
+
+    <h3>Class Activity Links</h3>
+    <a href="index.html">Home page</a> |
+    <a href="class_activity_1.html">Favorite Food</a> |
+    <a href="class_activity_2.html">Login Form</a> |
+    <a href="class_activity_3.html">Favorite Book</a> |
+    <a href="class_activity_4.html">Feedback Form</a> |
+    <a href="class_activity_5.html">Basic Calculator</a> |
+    <a href="class_activity_6.html">Html Multimedia</a> |
+    <a href="class_activity_7.html">Page Replicate</a> |
+    <a href="class_activity_8.html">Financial Webpage Replication</a> |
+    <a href="class_activity_9.html">Weekly Planner</a> |
+    <a href="class_activity_10.html">Weekly Classroom Schedule</a> |
+    <a href="class_activity_11.html">Revision 1</a> |
+    <a href="class_activity_12.html">Revision 2</a> |
+
+    <h3>Assignment Links</h3>
+    <a href="assignment_1.html">T-Shirt Signup Form</a> |
+    <a href="assignment_2.html">Kaduna Electric Form</a> |
+    <a href="assignment_3.html">Cable TV Packages</a> |
+
+    <h3>Project Preview Links</h3>
+    <a href="https://deliciousbytes.vercel.app/" target="_blank">Delicious Bytes Food Menu</a> |
+
+    <div class="page-container">
+        <h5>Let us know how we can improve freeCodeCamp</h5>
+        <!-- <form action="">
+            <div class="row">
+                <p>* Name</p>
+                <input type="text" name="name" id="">
+            </div>
+            <div class="row">
+                <p>* Email</p>
+                <input type="email" name="email" id="">
+            </div>
+            <div class="row">
+                <p>* Age</p>
+                <input type="number" name="age" id="">
+            </div>
+            <div class="row">
+                <p>Which option best describes your current role? </p>
+                <select name="role" id="">
+                    <option value="student">Student</option>
+                    <option value="student">Not Student</option>
+                </select>
+            </div>
+            <div class="row">
+                <p>* How likely is that you would recommend <br> freeCodeCamp to a friend?</p>
+                <span>
+                    <label><input type="radio" name="recommend" id="">Definitely</label>
+                    <label><input type="radio" name="recommend" id="">Maybe</label>
+                    <label><input type="radio" name="recommend" id="">Not sure</label>
+                </span>
+            </div>
+            <div class="row">
+                <p>What do you like most in FCC:</p>
+                <select name="role" id="">
+                    <option value="student">Select an option</option>
+                    <option value="student">Not Student</option>
+                </select>
+            </div>
+            <div class="row">
+                <p>Things that should be improved in the future <br>(Check all that apply): </p>
+                <span>
+                    <label><input type="checkbox" name="recommend" id="">Front-end Projects</label>
+                    <label><input type="checkbox" name="recommend" id="">Back-end Projects</label>
+                    <label><input type="checkbox" name="recommend" id="">Data Visualization</label>
+                </span>
+            </div>
+        </form> -->
+
+        <!-- second approach -->
+        <form action="">
+            <div class="left-column">
+                <p>* Name</p>
+                <p>* Email</p>
+                <p>* Age</p>
+                <p>Which option best describes your current role? </p>
+                <p>* How likely is that you would recommend <br> freeCodeCamp to a friend?</p>
+                <p>What do you like most in FCC:</p>
+                <p>Things that should be improved in the future <br>(Check all that apply): </p>
+            </div>
+            <div class="right-column">
+                <input type="text" name="name" id="">
+                <input type="email" name="email" id="">
+                <input type="number" name="age" id="">
+                <select name="role" id="">
+                    <option value="student">Student</option>
+                    <option value="student">Not Student</option>
+                </select>
+                <span>
+                    <label><input type="radio" name="recommend" id="">Definitely</label>
+                    <label><input type="radio" name="recommend" id="">Maybe</label>
+                    <label><input type="radio" name="recommend" id="">Not sure</label>
+                </span>
+                <select name="role" id="">
+                    <option value="student">Select an option</option>
+                    <option value="student">Not Student</option>
+                </select>
+                <span>
+                    <label><input type="checkbox" name="recommend" id="">Front-end Projects</label>
+                    <label><input type="checkbox" name="recommend" id="">Back-end Projects</label>
+                    <label><input type="checkbox" name="recommend" id="">Data Visualization</label>
+                </span>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
